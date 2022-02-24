@@ -1,0 +1,119 @@
+:root {
+  --border-color: #0896e2d7;
+  --container-width: 45vw;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui;
+}
+body {
+  background-color: #17202a;
+  display: flex;
+  flex-direction: column;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #b262fc;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(173, 13, 194);
+  border-radius: 10px;
+}
+header {
+  background-color: #33045f;
+  overflow: hidden;
+  height: 4rem;
+  width: 100vw;
+  box-shadow: 0px 2px 5px;
+  /* position: fixed;
+  top: 0; */
+  z-index: 10;
+}
+header img{
+  padding-top: 7px;
+  height: 3.5rem;
+}
+
+.main{
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.main section{
+  background-color: #1F195E;
+  border: 2px solid var(--border-color);
+  padding: 3vh 3vw;
+  border-radius: 1.5rem;
+}
+.download-logo img{
+  width: 10vw;
+}
+.download h2{
+  color: wheat;
+  font-size: 2.3vh;
+  text-align: center;
+}
+.download p{
+  color: white;
+  opacity: 50%;
+  display: block;
+  text-align: center;
+  padding: 2vh;
+
+}
+.errormsg{
+      font-size: 3rem;
+    color: white;
+}
+
+.download__meta h4{
+  color: white;
+  border: 2px dashed;
+  border-radius: 0.4rem;
+  padding: 1.5vh 1.5vw;
+}
+.download__meta small{
+  color: white;
+    text-align: center;
+    display: block;
+    padding: 10px 0px;
+    font-size: small;
+    opacity: 50%;
+    margin-bottom: 1rem;
+}
+
+.btn-container{
+      display: flex;
+    justify-content: center;
+}
+.btn-container a{
+  color: white;
+  text-decoration: none;
+  background-color: #33045f;
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.download-logo{
+  display: block;
+ text-align: center;
+}
+
+
+ 
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+  .main section{
+    width: 100%;
+  }
+
+  .download-logo img{
+    width: 30vw;
+  }
+ 
+}

@@ -1,0 +1,5 @@
+uploadFiles/*
+!uploadFiles/.gitkeep
+.DS_Store
+.env
+node_modules
